@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- author: Felipe Reyes 
+Code Name: { Nekosor }-->
+<head>
+    <!-- meta //codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <!-- meta compatibilidad con internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta compatibilidad con internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto-web</title>
+    <!-- Enlaces -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <!-- Fuentes    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/assets/css/matricula.css">
+</head>
+
+<body>
+
+
+    <article class="container-alert">
+        <section class="modal-content">
+           <section class="background-help"> <h2 class="color-yellow">¡Matrícula gratis!</h2>
+            </section>
+            <section class="model-two">
+            <p>Solicita más información aquí:</p>
+         
+            <form action="">
+                <input type="text" name="nombres" id="nombres" placeholder="Nombres" required>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" id="telefono" pattern="[9]{1}[0-9]{8}" placeholder="Teléfono / Celular" required>
+
+                <section class="checkbox-container">
+                    <input type="checkbox" name="politicas" id="politicas" required>
+                    <label for="politicas">
+                        Acepto haber leído las <span class="subrayado">políticas de privacidad</span> y los <span
+                            class="subrayado">términos y condiciones</span>.
+                    </label>
+                </section>
+
+                <button type="submit">Solicitar</button>
+           
+
+            </form>
+        </section>
+    </article>
+
+
+
+
+
+
+
+</body>
+
+</html>

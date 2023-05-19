@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- meta //codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <!-- meta compatibilidad con internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta compatibilidad con internet explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto-web</title>
+    <!-- Enlaces -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <!-- Fuentes    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+</head>
+
+<body>
+    <article class="container">
+        <form action="enviar.php" method="POST">
+            <section class="row">
+                <section class="col-xd-12 col-sm-12 col-md-6">
+                    <img src="assets/img/contacto.jpg" alt="" class="img-fluid imagen">
+                </section>
+                <section class="col-xd-12 col-sm-12 col-md-6">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+        
+                    <label>Correo:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
+        
+                    <label>Celular:</label>
+                    <input type="text" name="celular" pattern="[9]{1}[0-9]{8}" id="celular" placeholder="Ingresa tu celular"
+                        required>
+        
+                    <label>Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="150"
+                        placeholder="Escribe aquí tu mensaje..." required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </section>
+            </section>
+        </form>
+
+    </article>
+</body>
+
+</html>

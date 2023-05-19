@@ -1,0 +1,279 @@
+:root { /* Variables para los colores */
+    --color-primario: #007bff;
+    --color-secundario: #6c757d;
+    --sombras: rgba(0, 0, 0, .5);
+    --titulos: #ff311a;
+    --parrafos: #535457;
+    --fondo: #ffffff;
+    --cards: #e9dfb8;
+    --button: #FD0000;
+    --hover: #010858;
+    --footer-background: #202020;
+    --nekosor: #ffd45c;
+    --navbar: #767373;
+}
+
+* {
+    margin: 0;
+    /* Para que no haya margenes */
+    padding: 0;
+    /* Para que no haya relleno */
+    box-sizing: border-box;
+
+}
+
+/* importar fuente de la carpeta fonts */
+@font-face {
+    font-family: "Fredoka";
+    src: url('/assets/fonts//Fredoka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comme";
+    src: url('/assets/fonts/Comme-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background-color: var(--fondo);
+    /* Fondo con variables */
+}
+
+.container {
+    background-color: var(--fondo);
+    margin-top: 1%;
+}
+
+.imagen {
+    margin-top: 5%;
+    border-radius: 18px;
+}
+
+.titulo-h1 {
+
+    color: var(--titulos);
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 1.7em;
+    font-family: "Fredoka", sans-serif;
+    margin-bottom: 6%;
+
+}
+
+.titulo-h2 {
+    margin-top: 5%;
+    font-size: 1.3em;
+    font-family: "Fredoka", sans-serif;
+    font-weight: bold;
+}
+
+.parrafoX {
+    text-align: justify;
+    font-family: 'Comme', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+
+    color: var(--parrafos);
+
+
+}
+
+.neko-button {
+    background-color: var(--button);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    font-family: "Comme", sans-serif;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.neko-button:hover {
+    background-color: #010858;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    font-family: "Comme", sans-serif;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    transition: all 300ms;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Estilos para la barra de navegación */
+.nav-bar {
+    display: flex;
+    justify-content:center;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: "Fredoka", sans-serif;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-right:20px;
+    margin-top: 3%;
+
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--navbar);
+    font-size: 1.5em;
+}
+
+.nav-bar a:hover {
+
+    color: #010858;
+    font-weight: 600;
+    transition: 100ms;
+}
+
+/* LOGITO */
+.logo {
+
+  margin-left:24%;
+  width: 50%;
+   
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: var( --footer-background);
+    padding: 20px;
+    margin-top:5%;
+    border-radius: 5px 5px 0px 0px;
+    font-family: "Comme", sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nekosor {
+    color: var(--nekosor);
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-h1 {
+        flex-direction: column;
+        font-size: 1em
+        
+    }
+    .nav-bar>ul>li>:last-child {
+      font-size:1em
+    }
+
+ 
+}
+    
+@media screen and (max-width: 1200px) {
+    .titulo-h1 {
+        flex-direction: column;
+        font-size: 1.2em
+    }
+}
+
+
+form{
+max-width: 1000;
+  margin: auto;
+    padding: 5%;
+  
+    background-color: white;
+    box-shadow: 0px 0px 5px var(--sombras);
+    font-family: "Comme", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--parrafos);
+
+} 
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0000b3;
+}
+
+input[type="text"]:active{
+border-color:blue
+
+}
+
+textarea{
+min-width: 250px;
+max-height: 250px;
+
+}

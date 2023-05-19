@@ -1,0 +1,189 @@
+:root {
+    /* Variables para los colores */
+    --color-primario: #007bff;
+    --color-secundario: #6c757d;
+    --sombras: rgba(0, 0, 0, .5);
+    --titulos: #ff311a;
+    --parrafos: #535457;
+    --fondo: #ffffff;
+    --cards: #e9dfb8;
+    --button: #FD0000;
+    --hover: #010858;
+    --footer-background: #202020;
+    --nekosor: #ffd45c;
+    --navbar: #767373;
+}
+
+* {
+    margin: 0;
+    /* Para que no haya margenes */
+    padding: 0;
+    /* Para que no haya relleno */
+    box-sizing: border-box;
+
+}
+
+/* importar fuente de la carpeta fonts */
+@font-face {
+    font-family: "Fredoka";
+    src: url('/assets/fonts//Fredoka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Comme";
+    src: url('/assets/fonts/Comme-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background-color: var(--fondo);
+    /* Fondo con variables */
+}
+
+
+/* Estilos para la ventana emergente */
+.container-alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1F1F1F;
+    box-shadow: 0 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(238, 236, 236);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+.background-help {
+
+    background-color: #FFCC00;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.model-two {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.checkbox-container {
+    display: flex;
+
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+    font-size: 12px;
+
+    color: #202020;
+    font-family: "fredoka", cursive;
+    font-weight: 400;
+    text-align: left;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 88%;
+    padding: 11px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "fredoka", cursive;
+    color: white;
+    letter-spacing: 0.7px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}
+
+
+.color-yellow {
+    background-color: #FFCC00;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Fredoka', cursive;
+    font-weight: 600;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+p {
+    text-align: center;
+    font-family: "fredoka", cursive;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+
+}
+
+input {
+
+    display: block;
+    width: 100%;
+    margin-bottom: 9px;
+    margin-left: 22px;
+    margin-right: 10px;
+    max-width: 88%;
+    padding: 7px 7px 7px 7px;
+    font-size: 1em;
+    border: 1px solid #87d0fd;
+    border-radius: 7px;
+    font-family: "fredoka", cursive;
+}
+
+
+
+
+input[placeholder] {
+    color: #0030df;
+    font-family: "fredoka", cursive;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+input[type="checkbox"] {
+
+    max-width: 5%;
+    background-color: #333;
+
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #333;
+}
